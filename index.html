@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Hades.js - IP Enumeration</title>
+</head>
+
+<body>
+        <div class="container">
+            <h1 class="title is-1" style="font-family: 'VT323', monospace;color: aqua;">Hades.js -<span
+                    style="color: burlywood;"> IP Info</span></h1>
+            <form>
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+                        <input class="input is-large" type="text" id="inputValue" placeholder="Enter IP or Domain">
+                    </div>
+                    <div class="control">
+                        <button class="button is-info is-large" id="submitButton">
+                            <span class="icon is-small">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div class="info" hidden>
+                <div class="columns is-multiline" id="information">
+                    <div class="column is-half">
+                        <p style="color: black; font-size: xx-large;font-weight: bolder;">Information</p>
+                        <div class="details">
+                            <p>IP: <span id="ip"></span></p>
+                            <p>Hostname: <span id="hostname"></span></p>
+                            <p>AnyCast: <span id="anycast"></span></p>
+                            <p>City: <span id="city"></span></p>
+                            <p>Region: <span id="region"></span></p>
+                            <p>Country: <span id="country"></span></p>
+                            <p>Location: <span id="loc"></span></p>
+                            <p>Postal: <span id="postal"></span></p>
+                            <p>Timezone: <span id="timezone"></span></p>
+                            <p>ASN: <span id="asn"></span></p>
+                            <p>ASN-Name: <span id="asnName"></span></p>
+                            <p>Company: <span id="companyName"></span></p>
+                            <p>Company Domain: <span id="companyDomain"></span></p>
+                            <p>isVPN: <span id="privacyVPN"></span></p>
+                            <p>isProxy: <span id="privacyProxy"></span></p>
+                            <p>isTor: <span id="privacyTor"></span></p>
+                            <p>isRelay: <span id="privacyRelay"></span></p>
+                            <p>isHosting: <span id="privacyHosting"></span></p>
+                            <p>Address: <span id="abuseAddress"></span></p>
+                            <p>Country: <span id="abuseCountry"></span></p>
+                            </br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="src/app.js"></script>
+</body>
+<footer class="page-footer" style="background-color: #333; padding: 0px; position: fixed; bottom: 0; width: 100%;">
+    <div class="footer-copyright">
+        <div class="container" style="color: chartreuse;text-align: center;font-size: 25px;font-weight: bolder;">
+            © 2023 Copyright - <a href="https://github.com/sc4rfurry" target="_blank">@sc4rfurry 💤</a>
+        </div>
+    </div>
+</footer>
+
+</html>
